@@ -8,26 +8,19 @@ import java.io.Serializable;
 
 /**
  * 强化模式
- *
+ * <p>
  * 防止反射攻击的私有化构造方法
- *
+ * <p>
  * transient : 瞬时,不可被保存到IO里, 防止被反序列化
  */
-public class Elvis implements Serializable{
+public class Elvis implements Serializable {
 
-    private static transient Elvis INSTANCE = null;
+    private static final transient Elvis INSTANCE = new Elvis();
 
-    static {
-        try {
-            INSTANCE = new Elvis();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
-    private Elvis() throws Exception {
-        if (INSTANCE != null){
-            throw new Exception("The instance already existed");
+    private Elvis() {
+        if (INSTANCE != null) {
+            throw new AssertionError();
         }
     }
 
@@ -36,7 +29,11 @@ public class Elvis implements Serializable{
     }
 }
 
-enum Elvis1{
+enum Elvis1 {
     INSTANCE;
-    public void leaveTheBuilding(){};
+
+    public void leaveTheBuilding() {
+    }
+
+    ;
 }
