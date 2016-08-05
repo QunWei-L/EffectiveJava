@@ -1,15 +1,13 @@
-package me.qunwei.c1_creating_and_destroying_objects;
+package me.qunwei.c1_creating_and_destroying_objects.Page11_Builder;
 
 /**
  * Created by QunWei on 2016/8/5.
  */
-public class Page11_Builder {
-}
 
 /**
  * Builder: 当有固定参数和 可选参数时.
  */
-class NutritionFacts {
+public class NutritionFacts {
 
     private final int servingSize;
     private final int servings;
@@ -64,7 +62,7 @@ class NutritionFacts {
             return this;
         }
 
-        public NutritionFacts build(){
+        public NutritionFacts build() {
             return new NutritionFacts(this);
         }
 

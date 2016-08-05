@@ -1,4 +1,4 @@
-package me.qunwei.c1_creating_and_destroying_objects;
+package me.qunwei.c1_creating_and_destroying_objects.Page7_StaticFactory;
 
 /**
  * Created by QunWei on 2016/8/5.
@@ -16,18 +16,8 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * @author qunwei
  */
-public class Page7_StaticFactory {
-}
 
-interface Service {
-
-}
-
-interface Provider {
-    Service newSercice();
-}
-
-class Services {
+public class Services {
 
     private Services() {
 
