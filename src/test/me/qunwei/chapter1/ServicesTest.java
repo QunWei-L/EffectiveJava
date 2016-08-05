@@ -1,9 +1,7 @@
-package me.qunwei.c1_creating_and_destroying_objects;
+package me.qunwei.chapter1;
 
 import org.junit.After;
 import org.junit.Before;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by QunWei on 2016/8/5.

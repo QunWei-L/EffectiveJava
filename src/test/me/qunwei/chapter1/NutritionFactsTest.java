@@ -1,6 +1,6 @@
-package me.qunwei.c1_creating_and_destroying_objects;
+package me.qunwei.chapter1;
 
-import me.qunwei.c1_creating_and_destroying_objects.Page11_Builder.NutritionFacts;
+import me.qunwei.chapter1.Page11_Builder.NutritionFacts;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
