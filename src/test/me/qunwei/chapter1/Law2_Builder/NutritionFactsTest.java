@@ -1,24 +1,13 @@
-package me.qunwei.chapter1;
+package me.qunwei.chapter1.Law2_Builder;
 
-import me.qunwei.chapter1.Page11_Builder.NutritionFacts;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 /**
- * Created by QunWei on 2016/8/5.
+ * Created by QunWei on 2016/8/6.
  */
 public class NutritionFactsTest {
-    @Before
-    public void setUp() throws Exception {
-
-    }
-
-    @After
-    public void tearDown() throws Exception {
-
-    }
-
     @Test
     public  void testBuilder(){
         NutritionFacts demo = new NutritionFacts.Builder(240,8)
@@ -26,8 +15,5 @@ public class NutritionFactsTest {
                 .sodium(35)
                 .carbohydrate(27)
                 .build();
-
-
     }
-
 }

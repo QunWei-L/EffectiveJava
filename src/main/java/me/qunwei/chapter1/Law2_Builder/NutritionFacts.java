@@ -1,4 +1,4 @@
-package me.qunwei.chapter1.Page11_Builder;
+package me.qunwei.chapter1.Law2_Builder;
 
 /**
  * Created by QunWei on 2016/8/5.

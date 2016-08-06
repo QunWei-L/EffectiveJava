@@ -1,4 +1,4 @@
-package me.qunwei.chapter1.Page16_RealUtil;
+package me.qunwei.chapter1.Law4_RealUtil;
 
 /**
  * Created by QunWei on 2016/8/6.
@@ -15,7 +15,7 @@ package me.qunwei.chapter1.Page16_RealUtil;
 public class UtilityClass {
 
     private UtilityClass() {
-        throw new AssertionError();
+        throw new AssertionError("Error occ");
     }
 
     public static void main(String[] args) {

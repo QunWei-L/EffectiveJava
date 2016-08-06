@@ -1,4 +1,4 @@
-package me.qunwei.chapter1.Page14_Singleton;
+package me.qunwei.chapter1.Law3_Singleton;
 
 /**
  * Created by QunWei on 2016/8/5.
@@ -20,7 +20,7 @@ public class Elvis implements Serializable {
 
     private Elvis() {
         if (INSTANCE != null) {
-            throw new AssertionError();
+            throw new AssertionError("The instance already existed");
         }
     }
 
@@ -31,9 +31,6 @@ public class Elvis implements Serializable {
 
 enum Elvis1 {
     INSTANCE;
-
     public void leaveTheBuilding() {
     }
-
-    ;
 }
