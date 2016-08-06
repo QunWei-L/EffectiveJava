@@ -7,6 +7,7 @@ package me.qunwei.chapter1.Law7_NotFinalizer;
 
 /**
  *  避免使用终结方法(finalizer), 因为不可预测/危险.
+ *  不得不使用时, 记住调用super.finalize(), 记录非法用法.
  */
 public class Demo {
     public Demo() {
