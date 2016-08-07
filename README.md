@@ -25,3 +25,10 @@ Law 9: hashCode()和equals()一起覆盖, 用单元测试证明"逻辑相等的�
 
              取equals()证相等时, 用到的几个关键成员变量 -> 构造散列码, (P41 有 关键域的转码方法)
 
+Law 10: 建议所有的子类都覆盖toString()方法, 配上(格式)的文档说明
+
+Law 11: 谨慎覆盖clone(), 可以形成super.clone()调用链, 到达object.clone()的native方法.  //最好不用clone方法,自己构造拷贝构造器/拷贝工厂
+
+            所有实现了Cloneable接口的类都应该用一个公有(public)的方法覆盖clone, 该方法首先调用super.clone
+
+Law 12: 值类 应该坚决考虑实现 Comparable 接口, 与Equals()关键域的一致性
