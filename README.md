@@ -1,7 +1,7 @@
 # EffectiveJava
 Coding with &lt;Effective Java> second edition.
 
-Chapter 1: 创建和销毁对象
+Chapter 2: 创建和销毁对象
 
 Law 1: 用静态工厂方法代替构造器  例:服务提供者框架,用接口定义服务和提供者, 让用户根据实际需要自实现,然后用静态工厂进行保存\取用.
 
@@ -17,7 +17,7 @@ Law 6: 及时清理过期引用, 防止积聚, 内存泄漏.
 
 Law 7: 避免使用终结方法(finalizer), 因为不可预测/危险.
 
-Chapter 2: Object 的 自有方法
+Chapter 3: Object 的 自有方法
 
 Law 8: 覆盖Equals时要遵守: 自反\对称\传递\非空\一致性, 用单元测试来检查
 
@@ -33,7 +33,7 @@ Law 11: 谨慎覆盖clone(), 可以形成super.clone()调用链, 到达object.cl
 
 Law 12: 值类 应该坚决考虑实现 Comparable 接口, 与Equals()关键域的一致性
 
-Chapter 3: 类和接口的规范
+Chapter 4: 类和接口的规范
 
 Law 13: 始终尽可能地降低 方法(API) 和 成员变量(域) 的可访问性, 减少被滥用和修改的风险.
 
@@ -55,3 +55,10 @@ Law 20: 类层次, 反映类型本质上的层次关系, 有助于增强灵活�
 Law 21: 用策略接口 + 匿名实现类 来 达成 函数式编程力.
 
 Law 22: 优先考虑静态成员类, 当 指向 外围实例时, 用非静态成员类, 酌情使用内部类,匿名类,局部类
+
+//TODO: Chapter 5,6 泛型 和 枚举
+
+
+Chapter 7:
+
+Law 38: 检查参数的有效性, 开放性API抛异常, 私有方法 用断言(assert)
