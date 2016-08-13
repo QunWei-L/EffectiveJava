@@ -76,3 +76,11 @@ Law 42: 慎用可变参数, 必要时使用(一\二\三\多参数重载), 不用
 Law 43: 返回固定零长度的数组或者集合(Collections.emptyList()), 不要返回null.
 
 Law 44: 为所有打出API编写注释文档,[前置条件,后置条件,副作用]
+
+Law 45: 将局部变量的作用域最小化,防止误用出错(比如for循环的i优于while循环),
+
+            可以使方法小而集中.
+
+Law 46: for-each 循环优于传统for循环: 性能略优,不易出错(简洁/预防bug),只要让元素实现Iterable接口
+
+Law 47: 了解和使用类库(JDK),更优化/主流,应该关注java.lang, java.util, 某种程度上的java.io
