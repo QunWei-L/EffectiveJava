@@ -84,3 +84,9 @@ Law 45: 将局部变量的作用域最小化,防止误用出错(比如for循环�
 Law 46: for-each 循环优于传统for循环: 性能略优,不易出错(简洁/预防bug),只要让元素实现Iterable接口
 
 Law 47: 了解和使用类库(JDK),更优化/主流,应该关注java.lang, java.util, 某种程度上的java.io
+
+Law 48: 需要精确答案(货币计算),请不要用float/double, 可以用BigDecimal(完全控制舍入)/long/int.
+
+Law 49: 基本类型优于装箱类 : 基本运算==,空指针,性能下降.
+
+            用法: 作为集合的元素/键/值, 参数化类型
