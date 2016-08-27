@@ -114,3 +114,22 @@ Law 55: 谨慎地优化: 编写好的程序 , 而不是快的程序.
             编写好的程序(清晰,简明,结构良好), 性能随之而来, 好好设计, 保持良品.
 
 Law 56: 遵守标准的命名惯例, 当做一种内在机制来看待.
+
+
+Chapter 9:
+
+Law 57: 只针对异常情况使用[异常机制], 设计良好的API不应该让客户端使用异常作为正常的控制流.
+
+Law 58: 对[可恢复的情况] 使用 [受检异常], 对 [编程错误] 使用 [运行时异常].
+
+            [受检异常] 应该指明可恢复的条件. [运行时异常] 和 [错误] 属于不可恢复. 
+            
+Law 59: 避免不必要地使用 [受检异常], 根据情况, 避免不必要的复杂 与 负担.
+            
+Law 60: 优先使用标准的异常: 专家级程序员追求的 高度代码重用 和 可读性.//开销也小
+            
+            常用异常: IllgalArgumentException, IllegalStateException, NullPointerException,
+                      IndexOutOfBoundsException, ConcurrentModificationException(禁止并发修改)
+                      UnsupportedOperationException
+                      
+                      
